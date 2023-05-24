@@ -9,7 +9,7 @@
     "build": "tsc",
     "deploy-commands": "ts-node src/deploy-commands.ts",
     "deploy": "git add . && git commit -m \"Deploy\" && git push heroku main && heroku logs --tail",
-    "postinstall": "tsc && rm -v -rf src"
+    "postinstall": "tsc"
   },
   "repository": {
     "type": "git",
