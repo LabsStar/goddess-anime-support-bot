@@ -8,18 +8,6 @@
 Goddess Anime Cards is a website / bot where you can trade anime cards with other users. You can also buy cards from the shop and sell your own cards to other users.
 
 
-# Table of Contents
-<details>
-  <summary>Table of Contents</summary>
-  <ul>
-    <li><a href="enviroment-variables">Environment Variables</a></li>
-    <li><a href="authors">Authors</a></li>
-    <li><a href="feedback">Feedback</a></li>
-    <li><a href="run-locally">Run Locally</a></li>
-    <li><a href="support">Support</a></li>
-  </ul>
-</details>
-
 
 
 ## Environment Variables
