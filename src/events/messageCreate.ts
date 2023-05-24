@@ -122,10 +122,6 @@ module.exports = {
 
 
       }
-
-      if (command === "welcome") {
-        client.emit("guildMemberAdd", message.member as GuildMember);
-      }
     }
 
   },
