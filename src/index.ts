@@ -23,7 +23,7 @@ config();
 const commandFolders = readdirSync(join(__dirname, "commands"));
 
 for (const folder of commandFolders) {
-    const commandFiles = readdirSync(join(__dirname, "commands", folder)).filter(file => file.endsWith(".ts"));
+    const commandFiles = readdirSync(join(__dirname, "commands", folder)).filter(file => file.endsWith(".ts") || file.endsWith(".js"));
     for (const file of commandFiles) {
         const command = require(join(__dirname, "commands", folder, file));
         client.commands.set(command.command.data.name, command.command);
@@ -31,7 +31,7 @@ for (const folder of commandFolders) {
 }
 
 
-const eventFiles = readdirSync(join(__dirname, "events")).filter(file => file.endsWith(".ts"));
+const eventFiles = readdirSync(join(__dirname, "events")).filter(file => file.endsWith(".ts") || file.endsWith(".js"));
 
 for (const file of eventFiles) {
     const event = require(join(__dirname, "events", file));
