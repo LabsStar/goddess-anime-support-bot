@@ -66,12 +66,6 @@ module.exports = {
                   emoji: "🔧",
                 },
                 {
-                  label: "Contibuting Role",
-                  description: "Have you contributed to the bot? Get your role here!",
-                  value: "contibuting_role",
-                  emoji: "👨‍💻",
-                },
-                {
                   label: "Bug Report",
                   description: "Found a bug? Report it here!",
                   value: "bug_report",
