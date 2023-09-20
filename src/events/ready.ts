@@ -11,18 +11,9 @@ module.exports = {
     console.clear();
     logger.info(`Logged in as ${client.user?.tag}!`);
 
-    mongoose.connect(process.env.MONGO_URI as string);
+    // mongoose.connect(process.env.MONGO_URI as string);
 
-    client.user?.setActivity("goddessanime.com", { type: "WATCHING" });
-
-
-    const db = mongoose.connection;
-
-    db.on("error", console.error.bind(console, "connection error:"));
-
-    db.once("open", () => {
-      logger.info("Connected to MongoDB");
-    });
+    client.user?.setActivity("hyperstar.live", { type: "WATCHING" });
 
     webServer();
 
